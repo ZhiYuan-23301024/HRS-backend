@@ -1,0 +1,21 @@
+#服务端口，随便起
+server:
+  port: 8083
+#服务名称
+spring:
+  application:
+    name: RegistrationServiceApplication
+  datasource:
+    url: jdbc:mysql:///ZXEdb?serverTimezone=UTC
+    username: root
+    password: 082109Zhr
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#eureka地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:11011/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+
